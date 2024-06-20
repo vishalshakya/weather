@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left">
+        <div class="header">
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Enter location Name"
+              id="input-box"
+            />
+            <button class="fa-solid fa-magnifying-glass" id="search"></button>
+          </div>
+        </div>
+        <div class="weather">
+          <div class="weather-body">
+            <img src="./clear.png" alt="weather" class="weather-img" />
+          </div>
+          <div class="weather-box">
+            <p class="tem black bold">0 <sup> °C</sup></p>
+            <p class="des black">light rain</p>
+          </div>
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            <img src="./humidity.png" alt="" />
+          </div>
+          <div class="text">
+            <span class="black bold" id="humidity">0%</span>
+            <p class="black">humidity</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="head">5 day Forecast</div>
+        <div class="day">
+             <p>1 <sup>th</sup>  day</p>
+             <div class="day-detail">
+            <span id="first-temp"></span>
+            <span id="first-con"></span> 
+            <span id="first-humi"></span>
+        </div>
+
+        </div>
+        <div class="day">
+            <p>2 <sup>th</sup>  day</p>
+            <div class="day-detail">
+            <span id="second-temp"></span>
+                <span id="second-con"></span> 
+                <span id="second-humi"></span>
+        </div>
+          </div>
+          <div class="day">
+            <p>3 <sup>th</sup>  day</p>
+            <div class="day-detail">
+                <span id="third-temp"></span>
+                <span id="third-con"></span> 
+                <span id="third-humi"></span>
+       </div>
+
+       </div>
+       <div class="day">
+           <p>4 <sup>th</sup>  day</p>
+           <div class="day-detail">
+            <span id="forth-temp"></span>
+            <span id="forth-con"></span> 
+            <span id="forth-humi"></span>
+       </div>
+         </div>
+         <div class="day">
+            <p>5 <sup>th</sup>  day</p>
+            <div class="day-detail">
+                <span id="fifth-temp"></span>
+                <span id="fifth-con"></span> 
+                <span id="fifth-humi"></span>
+       </div>
+
+       </div>
+    
+      </div>
+    </div>
+        <!-- <table>
+            <th class="head">
+              <tr>
+                <td>1 day</td>
+                <td>2 day</td>
+                <td>3 day</td>
+                <td>4 day</td>
+                <td>5 day</td>
+              </tr>
+            </th>
+            <tr>
+              <td>Temperature = <span id="first-temp">s</span></td>
+              <td>Temperature =<span id="second-temp"></span></td>
+              <td>Temperature =<span id="third-temp"></span></td>
+              <td>Temperature =<span id="forth-temp"></span></td>
+              <td>Temperature =<span id="fifth-temp"></span></td>
+            </tr>
+            <tr>
+              <td>Humidity = <span id="first-humi"></span></td>
+              <td>Humidity =<span id="second-humi"></span></td>
+              <td>Humidity =<span id="third-humi"></span></td>
+              <td>Humidity =<span id="forth-humi"></span></td>
+              <td>Humidity =<span id="fifth-humi"></span></td>
+            </tr>
+          </table> -->
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/f97e174d34.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
